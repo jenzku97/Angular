@@ -1,0 +1,9 @@
+img {
+  cursor: pointer;
+}
+#brand {
+  font-family: 'Pacifico', cursive;
+}
+#underline {
+  text-decoration: underline;
+}

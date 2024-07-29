@@ -1,0 +1,23 @@
+<div class="card mb-3 shadow rounded">
+  <img [src]="post.picture" height="500" width="auto" class="card-img-top img-fluid" />
+  <div class="card-body">
+    <p class="card-text font-italic">feeling: {{ post.emotion }}</p>
+    <p class="card-text">{{ post.caption }}</p>
+    <p class="card-text">
+      <small class="text-muted">by:- {{ post.by }}, on:- {{ post.date | date }}</small>
+    </p>
+  </div>
+  <div class="card-footer bg-transparent d-flex justify-content-around align-content-center">
+    <div (click)="upvotePost()" class="text-primary">
+      <fa-icon [icon]="faThumbsUp" size="lg" primaryColor="blue"></fa-icon>
+      {{ upvote }}
+    </div>
+    <div (click)="downvotePost()" class="text-secondary">
+      <fa-icon [icon]="faThumbsDown" size="lg" primaryColor="red"></fa-icon>
+      {{ downvote }}
+    </div>
+    <a [href]="getInstaUrl()" target="_blank" class="text-primary">
+      <fa-icon [icon]="faShareSquare" size="lg" primaryColor="blue"></fa-icon>
+    </a>
+  </div>
+</div>
