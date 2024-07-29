@@ -1,0 +1,14 @@
+.horizontal-display {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: row;
+}
+img {
+  height: 80px;
+  width: 80px;
+  margin-right: 4px;
+}
+a, a:visited, a:hover {
+  text-decoration: none;
+  color: black!important;
+}
